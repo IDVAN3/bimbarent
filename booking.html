@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Главная</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <div class="content">
+<header class="header lock-padding">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__left">
+                <a href="#" class="header__logo">
+                    <img src="img/icons/home.webp" alt="">
+                </a>
+                <nav class="header-navbar">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#" class="header-navbar__link">Бронирования</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-navbar__link">Мои желания</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-navbar__link active">Личная информация</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-navbar__link">Уведомления</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <div class="header__wrapper-submenu">
+                    <a href="#" class="header__link header__link-abr">
+                        <span class="header__value header__value-first" data-value='0'>
+                            <span data-language="ua">UA</span>
+                            <span class="active" data-language="ru">RU</span>
+                            <span data-language="en">EN</span>
+                        </span>
+                        <span class="header__value" data-value='1'>
+                            <span data-language="uah">UAH</span>
+                            <span class="active" data-language="usd">USD</span>
+                            <span data-language="eur">EUR</span>
+                        </span>
+                    </a>
+                    <div class="header__submenu">
+                        <ul class="header__submenu-list" data-value-list='0'>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="ua">Українська</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link active" data-language-word="ru">Русский</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="en">English</a>
+                            </li>
+                        </ul>
+                        <ul class="header__submenu-list" data-value-list='1'>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="uah"><span>UAH</span>Гривна</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link active" data-language-word="usd"><span>USD</span>Доллар</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="eur"><span>EUR</span>Евро</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__wrapper-submenu">
+                    <!-- Add or remove class active for notification -->
+                    <a href="#" class="header__link header__link-type-2">
+                        <img src="img/icons/user1.webp" alt="">
+                    </a>
+                    <div class="header__submenu header__submenu-kabinet">
+                        <ul class="header__submenu-list" data-value-list='2'>
+                            <li>
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span>Мои бронирования</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span class="active">Мои желания</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span class="active">Личная информация</span>
+                                </a>
+                            </li>
+                            <li class="border-bot">
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span class="active">Уведомления</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2">Перейти в режим владельца</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2">Обратная связь</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header-sub"></div>
+            <!-- BOOKING -->
+            <section class="booking">
+                <div class="container">
+                    <div class="booking__body">
+                        <ul class="booking-menu">
+                            <li>
+                                <a href="#listtab-1" class="booking__link active">Предстоящие (<span>3</span>)</a>
+                            </li>
+                            <li>
+                                <a href="#listtab-2" class="booking__link">ЗавершенНЫЕ (<span>5</span>)</a>
+                            </li>
+                        </ul>
+                        <div class="booking-all active" id="listtab-1">
+                            <aside class="booking-aside">
+                                <a href="#booktab-1" class="booking-aside__item active">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-yellow"></span>
+                                        <span class="booking-status__title">Ожидает подтверждения</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Парусная яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 trtrtr</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                                <a href="#booktab-2" class="booking-aside__item">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-green"></span>
+                                        <span class="booking-status__title">Подтверждено</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 Lila Moun trtrtr</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                                <a href="#booktab-3" class="booking-aside__item">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-yellow"></span>
+                                        <span class="booking-status__title">Смена даты</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 Lila</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                            </aside>
+                            <div class="booking-wrapper active" id="booktab-1">
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-yellow"></span>
+                                                <span class="booking-status__title">Ожидает подтверждения</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">88 сентября 2088</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">88 сентября 2088</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <p>Контакты владельца появятся после подтверждения бронирования</p>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Отмена бронирования</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Правила отмены</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="popup-3" class="booking-content-line__link js-btn-popup">Отменить</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="booking-wrapper" id="booktab-2">
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-yellow"></span>
+                                                <span class="booking-status__title">Ожидает подтверждения</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">5 марта 2021</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">8 марта 2021</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd booking-copy-padd-2">
+                                                <span class="booking-copy-str">
+                                                    Владелец Виктория 
+                                                    <span  class="booking-value">+380635698656</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+                                                <div class="booking-content-line">
+                                                    <span>Добавить событие в 
+                                                        <a href="#" class="booking-content-line__link">Google Calendar</a> 
+                                                    </span>
+                                                </div>
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Отмена бронирования</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Правила отмены</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="popup-3" class="booking-content-line__link js-btn-popup">Отменить</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="booking-wrapper" id="booktab-3">
+                                <article class="booking-wrapper__item booking-wrapper__item-h">
+                                    <h3>Смена даты бронирования</h3>
+                                    <form action="#" class="booking-form">
+                                        <p>Новая дата: <span>6 МАР 10:00 - 6 МАР 12:00</span></p>
+                                        <p>Причина: <span>перенос дат по просьбе гостя</span></p>
+                                        <div class="booking-form-btns">
+                                            <button class="btn-date show">Подтвердить</button>
+                                            <a href="popup-5" class="btn-date clear booking-form-clear js-btn-popup" >Отклонить</a>
+                                        </div>
+                                    </form>
+                                </article>
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-yellow"></span>
+                                                <span class="booking-status__title">Ожидает подтверждения</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">5 марта 2021</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">8 марта 2021</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd booking-copy-padd-2">
+                                                <span class="booking-copy-str">
+                                                    Владелец Виктория 
+                                                    <span  class="booking-value">+380635698656</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Отмена бронирования</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Правила отмены</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="popup-3" class="booking-content-line__link js-btn-popup">Отменить</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="booking-all" id="listtab-2">
+                            <aside class="booking-aside">
+                                <a href="#booktabclose-1" class="booking-aside__item active">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-grey"></span>
+                                        <span class="booking-status__title">Подтверждено</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Парусная яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 trtrtr</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                                <a href="#booktabclose-2" class="booking-aside__item">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-grey"></span>
+                                        <span class="booking-status__title">Отклонено владельцем</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 Lila Moun trtrtr</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                                <a href="#booktabclose-3" class="booking-aside__item">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-grey"></span>
+                                        <span class="booking-status__title">Отменено гостем</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 Lila</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                                <a href="#booktabclose-4" class="booking-aside__item">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-grey"></span>
+                                        <span class="booking-status__title">Запрос просрочен</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 Lila</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                                <a href="#booktabclose-5" class="booking-aside__item">
+                                    <span class="booking-status">
+                                        <span class="booking-status__circle booking-status-grey"></span>
+                                        <span class="booking-status__title">Смена даты</span>
+                                    </span>
+                                    <span class="booking-aside__info">
+                                        <span class="booking-aside__info-img">
+                                            <img src="img/yacht.webp" alt="">
+                                        </span>
+                                        <span class="booking-aside__info-text">
+                                            <span>25 мар 10:00</span>
+                                            <span><span>3</span> часа</span>
+                                        </span>
+                                    </span>
+                                    <span class="booking-aside__transport">
+                                        <span class="booking-status__h6 booking-status__subtitle">Яхта</span>
+                                        <span class="booking-status__h6 booking-status__subtitle booking-text-hide">Ellizabetha Azimut Magellano Fly 25 Lila</span>
+                                    </span>
+                                    <p>Запорожье, яхт-клуб River Lodge River Arve</p>
+                                </a>
+                                <div class="wrapper-show-all">
+                                    <a href="#" class="btn-ads">Показать еще</a>
+                                </div>
+                            </aside>
+                            <div class="booking-wrapper active" id="booktabclose-1">
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-grey"></span>
+                                                <span class="booking-status__title">Отклонено владельцем</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">5 марта 2021</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">8 марта 2021</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd booking-copy-padd-2">
+                                                <span class="booking-copy-str">
+                                                    Владелец Виктория 
+                                                    <span  class="booking-value">+380635698656</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+    
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="booking-wrapper" id="booktabclose-2">
+                                <article class="booking-wrapper__item booking-wrapper__item-h">
+                                    <h3>Отклонено владельцем</h3>
+                                    <form action="#" class="booking-form">
+                                        <p>Владелец отклонил запрос на бронирование. Попоробуйте найти новое обьявление.
+                                            <br>Причина: <span>поломка (ремонт 1-2 дня)</span>.</p>
+                                        <div class="booking-form-btns">
+                                            <button class="btn-date show">Посмотреть варианты</button>
+                                        </div>
+                                    </form>
+                                </article>
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-grey"></span>
+                                                <span class="booking-status__title">Отклонено владельцем</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">5 марта 2021</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">8 марта 2021</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <p>Контакты владельца появятся после подтверждения бронирования</p>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="booking-wrapper" id="booktabclose-3">
+                                <article class="booking-wrapper__item booking-wrapper__item-h">
+                                    <h3>Отменено гостем</h3>
+                                    <form action="#" class="booking-form">
+                                        <p>Вы отменили аренду <span>25.05.2021</span>в <span>13:45</span>.</p>
+                                        <div class="booking-form-btns">
+                                            <button class="btn-date show">Посмотреть варианты</button>
+                                        </div>
+                                    </form>
+                                </article>
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-grey"></span>
+                                                <span class="booking-status__title">Отменено гостем</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">5 марта 2021</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">8 марта 2021</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd booking-copy-padd-2">
+                                                <span class="booking-copy-str">
+                                                    Владелец Виктория 
+                                                    <span  class="booking-value">+380635698656</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="booking-wrapper" id="booktabclose-4">
+                                <article class="booking-wrapper__item booking-wrapper__item-h">
+                                    <h3>Запрос просрочен</h3>
+                                    <form action="#" class="booking-form">
+                                        <p>Владелец не отреагировал на запрос. Вам будет возвращена полна сумма онлайн предоплаты.</p>
+                                        <div class="booking-form-btns">
+                                            <button class="btn-date show">Посмотреть варианты</button>
+                                        </div>
+                                    </form>
+                                </article>
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-grey"></span>
+                                                <span class="booking-status__title">Запрос просрочен</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">5 марта 2021</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">8 марта 2021</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <p>Контакты владельца появятся после подтверждения бронирования</p>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="booking-wrapper" id="booktabclose-5">
+                                <article class="booking-wrapper__item booking-wrapper__item-h">
+                                    <h3>Смена даты бронирования</h3>
+                                    <div class="booking-form">
+                                        <p>Новая дата: <span>6 МАР 10:00 - 6 МАР 12:00</span></p>
+                                        <p>Причина: <span>перенос дат по просьбе гостя</span></p>
+                                    </div>
+                                </article>
+                                <article class="booking-wrapper__item">
+                                    <h3>Парусная яхта  Ellizabetha Azimut Magellano Fly 25 Lila Mounty Fiona (2007)</h3>
+                                    <div class="booking-content">
+                                        <div class="booking-content__item booking-content__left">
+                                            <div class="booking-content__left-img">
+                                                <img src="img/yacht.webp" alt="img">
+                                            </div>
+                                            <div class="booking-status">
+                                                <span class="booking-status__circle booking-status-grey"></span>
+                                                <span class="booking-status__title">Смена даты</span>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span>Номер бронирования</span>
+                                                <span class="booking-value">15689654</span> 
+                                                <a href="#" class="booking-copy__btn">
+                                                    <svg class="icon-copy">
+                                                        <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                    </svg>
+                                                    <span class="tooltiptext">Копировать</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right">
+                                            <div class="booking-time">
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">5 марта 2021</div>
+                                                    <div class="booking-time__subitem">10:00</div>
+                                                </div>
+                                                <div class="booking-time__item">
+                                                    <div class="booking-time__subitem">8 марта 2021</div>
+                                                    <div class="booking-time__subitem">13:00</div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-copy booking-copy-padd booking-copy-padd-2">
+                                                <span class="booking-copy-str">
+                                                    Владелец Виктория 
+                                                    <span  class="booking-value">+380635698656</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            <p>Взрослые <span>2</span>, дети <span>1</span>, младенцы <span>1</span>, питомец</p>
+                                            <div class="booking-copy booking-copy-padd">
+                                                <span class="booking-copy-str">
+                                                    <span  class="booking-value">
+                                                    Запорожье, яхт-клуб River Lodge
+                                                    Nasypna Street, 7, L'viv, L'vivs'ka oblast, Ukraine, 79000</span>
+                                                    <a href="#" class="booking-copy__btn">
+                                                        <svg class="icon-copy">
+                                                            <use xlink:href="img/svg/sprite.svg#copy"></use>
+                                                        </svg>
+                                                        <span class="tooltiptext">Копировать</span>
+                                                    </a>
+                                                </span>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="booking-content__item booking-content__left">
+                                            <h4>Валюта обьекта размещения <span>UAH</span></h4>
+                                            <h6>Детализация цены</h6>
+                                            <div class="booking-line">
+                                                <p>Оплачено онлайн</p>
+                                                <p>$<span>782.68</span></p> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p>Оплата на месте</p>
+                                                <p>$<span>3 121.69</span></p>
+                                            </div>
+                                            <div class="booking-line booking-line-border">
+                                                <h6>Всего $<span>1 300</span> x <span>3</span> ночи</h6>
+                                                <h6>$<span>3 904.37</span></h6> 
+                                            </div>
+                                            <div class="booking-line">
+                                                <p class="fw500">Страховой депозит</p>
+                                                <p>$<span>800</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="booking-content__item booking-content__right jcsb">
+                                            <div class="booking-content__item-wrapper">
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Поддержка</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Telegram чат</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Форма обратной связи</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="booking-content-line">
+                                                    <div class="booking-content-line__left">
+                                                        <h6>Отмена бронирования</h6>
+                                                    </div>
+                                                    <div class="booking-content-line__right">
+                                                        <div class="booking-content-line__item">
+                                                            <a href="#" class="booking-content-line__link">Правила отмены</a>
+                                                            <span class="select__icon personal-icon">
+                                                                <svg class="icon-arrow icon-arrow-select">
+                                                                    <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="booking-content-line__item">
+                                                            <a href="popup-3" class="booking-content-line__link js-btn-popup">Отменить</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="booking-content-line__date">Дата покупки <span>18.05.2021 13:45</span></div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /BOOKING -->
+        </div>
+
+        
+    </div>
+    <!-- /WRAPPER -->
+
+ <!-- POPUP -->
+
+    <!-- message: Другие фильтры -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                <h2>Другие фильтры</h2>
+            </div>
+            <div class="popup-container">
+                
+                <form action="#" class="filter popup__filter">
+                    <h3>Аренда</h3>
+                    <div class="filter__radio-wrapper">
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Почасовая</span>
+                                <span class="filter__p">Сопроводительный текст</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Посуточная</span>
+                                <span class="filter__p">Сопроводительный текст</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Без выхода из марины</span>
+                                <span class="filter__p">Позавтракать в яхт-клубе, встретить салют, романтическое свидание</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+                    </div>
+                    <div class="filter__price">
+                        <h3>Ценовой диапазон</h3>
+                        <div class="skin-value">
+                            <div class="skin-value__min">от <span>300$</span></div>
+                            <div class="skin-value__max">до <span>2000$</span></div>
+                        </div>
+                        <div class="wrapper-my-skin">
+                            <input type="text" class="js-range-slider options__input" />
+                        </div>
+                    </div>
+                    <div class="filter__sort">
+                        <div>
+                            <h4>Сортировка карточек</h4>
+                            <p>Сначала дешевле</p>
+                        </div>
+                        <input type="checkbox" class="check-click">
+                    </div>
+                    <div class="filter__guest">
+                        <h3>Гостей</h3>
+                        <div class="filter__guest-content">
+                            <div>
+                                <h4>Взрослые</h4>
+                                <p>Возраст: от 13 лет</p>
+                            </div>
+                            <div class="wrapper-input-number">
+                                <input type="number" class="input-number" value="100" min="0" max="100">
+                                <div class="wrapper-arrows">
+                                    <button class="quantity-arrow-plus arrows stop" tabindex="0">
+                                        <span class="arrows__plus"></span>
+                                    </button>
+                                    <button class="quantity-arrow-minus arrows" tabindex="0">
+                                        <span class="arrows__minus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__guest-content">
+                            <div>
+                                <h4>Дети</h4>
+                                <p>Возраст: 2-12 лет</p>
+                            </div>
+                            <div class="wrapper-input-number">
+                                <input type="number" class="input-number" value="88" min="0" max="100">
+                                <div class="wrapper-arrows">
+                                    <button class="quantity-arrow-plus arrows" tabindex="0">
+                                        <span class="arrows__plus"></span>
+                                    </button>
+                                    <button class="quantity-arrow-minus arrows" tabindex="0">
+                                        <span class="arrows__minus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__guest-content">
+                            <div>
+                                <h4>Младенцы</h4>
+                                <p>Возраст: до 2 лет</p>
+                            </div>
+                            <div class="wrapper-input-number">
+                                <input type="number" class="input-number" value="0" min="0" max="100">
+                                <div class="wrapper-arrows">
+                                    <button class="quantity-arrow-plus arrows" tabindex="0">
+                                        <span class="arrows__plus"></span>
+                                    </button>
+                                    <button class="quantity-arrow-minus arrows stop" tabindex="0">
+                                        <span class="arrows__minus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__comfort">
+                        <h3>Удобства на борту</h3>
+                        <div class="filter__comfort-body">
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Один
+                                </label>
+                            </div>
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Два
+                                </label>
+                            </div>
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Три
+                                </label>
+                            </div>
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Четыре
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__length">
+                        <h3>Длина судна</h3>
+                        <div class="filter__length-body">
+                            <div class="skin-value">
+                                <div class="skin-value__min">от <span>2</span> метров</div>
+                                <div class="skin-value__max">до <span>36</span> метров</div>
+                            </div>
+                            <div class="wrapper-my-skin">
+                                <input type="text" class="js-range-slider-2 options__input" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-wrapper-2 popup__footer">
+                        <button class="btn-date clear" type="reset">Очистить</button>
+                        <button class="btn-date show">Показать <span>15</span> вариантов</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Оборудование -->
+    <div class="popup js-popup" data-id-popup="popup-1">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                <h2>Оборудование</h2>
+            </div>
+            <div class="popup-container ads-popup">
+                <h4>Оборудование на борту</h4>
+                <ul class="ads-popup__list">
+                    <li>Душ на палубе</li>
+                    <li>Обеденный стол</li>
+                    <li>Стереосистема</li>
+                    <li>Тиковая палуба</li>
+                    <li>Терасса в носовой части судна</li>
+                    <li>Терраса в кормовой части судна</li>
+                    <li>Кормовая Купальная Платформа</li>
+                    <li>Лестница для купания</li>
+                </ul>
+                <h4>Комфорт</h4>
+                <ul class="ads-popup__list">
+                    <li>Горячая вода</li>
+                    <li>Опреснитель</li>
+                    <li>Кондиционер</li>
+                    <li>Отопительная система</li>
+                    <li>Стиральная машина</li>
+                    <li>Электрический санузел</li>
+                    <li>Телевизор</li>
+                    <li>Навигационное оборудование</li>
+                    <li>Шлюпка</li>
+                    <li>Подвесной двигатель</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Редактирование -->
+    <div class="popup js-popup" data-id-popup="popup-2">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close personal-close">
+                    <span class="popup__close js-popup__close">
+                        <span class="select__icon personal-icon-2">
+                            <svg class="icon-arrow icon-arrow-select">
+                                <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="personal-close__h4">Редактирование</span>
+                    </span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup">
+                <div class="personal-valid">Подтвердите номер, чтобы сотрудники bimbarent или владельцы суден смогли связаться с вами для решения вопросов по бронированиям.</div>
+                <form action="#">
+                    <input type="tel" class="personal-input" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" id="js-telephone-input" maxlength="14" value="+3805056986565" placeholder="+3805056986565">
+                    <div class="personal-code">Получить код в чат-боте:</div>
+                    <div class="personal-radio-wrapper">
+                        <label class="personal-radio__item">
+                            <span>Viber</span>
+                            <input type="radio" name="messe" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="personal-radio__item">
+                            <span>Telegram</span>
+                            <input type="radio" name="messe" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                    </div>
+                    <button class="btn-ads btn-type-3">Продолжить</button>
+                    <input type="text" class="personal-code-input" placeholder="5689">
+                    <button class="btn-type-2 w100 js-btn-telephone">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Отменить бронирование? -->
+    <div class="popup js-popup" data-id-popup="popup-3">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header popup__header-close">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup popup-cancel">
+                <h4>Отменить бронирование?</h4>
+                <div class="booking-popup">Отмена бронирования является окончательной. Восстановить обратно невозможно.</div>
+                <form action="#">
+                    <button class="btn-type-2 w100">Отменить бронирование</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Бронирование отменено -->
+    <div class="popup js-popup" data-id-popup="popup-4">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header popup__header-close">
+                <div class="popup-wrap-close dn">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup popup-cancel">
+                <h4>Бронирование отменено</h4>
+                <div class="booking-popup">Возврат средств на Вашу карту будет осуществен в течение 7-60 дней.</div>
+                <button class="btn-type-2 w100 js-popup__close">Хорошо</button>
+            </div>
+        </div>
+    </div>
+
+    <!--message: Нам очень жаль, что вы столкнулись со сложностями! -->
+    <div class="popup js-popup" data-id-popup="popup-5">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp booking-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup">
+                <h4>Нам очень жаль, что вы столкнулись со сложностями!</h4>
+                <div class="booking-popup">Мы всегда готовы вам помочь и сделать ваш отдых комфортнее. Попробуйте связаться с владельцем и перенести аренды еще раз на удобнее вам время.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- message: Укажите причину отмены -->
+    <div class="popup js-popup" data-id-popup="popup-6">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header popup__header-close">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup popup-cancel popup-cancel-1">
+                <h4>Укажите причину отмены</h4>
+                <form action="#">
+                    <div class="filter__radio-wrapper popup-filter">
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Запрашиваемые даты недоступны</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Поломка (ремонт 1-2 дня)</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Повреждение <br> (ремонт займет время)</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Аренда невозможна из-за погодных условий</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+                    </div>
+                    <button class="btn-type-2 w100">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ <!-- кнопка прокрутки вверх -->
+    <div class="wrapper-scroll lock-padding none">
+        <div class="scroll-up js-scroll-up">
+            <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+                <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Подключеине скриптов -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+    <script src="libs/moment.min.js"></script>
+    <script src="libs/daterangepicker.js"></script>
+    <script src="libs/moment-with-locales.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="libs/ion/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

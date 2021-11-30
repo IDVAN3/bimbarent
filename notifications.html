@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Главная</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <div class="content">
+<header class="header lock-padding">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__left">
+                <a href="#" class="header__logo">
+                    <img src="img/icons/home.webp" alt="">
+                </a>
+                <nav class="header-navbar">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#" class="header-navbar__link">Бронирования</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-navbar__link">Мои желания</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-navbar__link active">Личная информация</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-navbar__link">Уведомления</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <div class="header__wrapper-submenu">
+                    <a href="#" class="header__link header__link-abr">
+                        <span class="header__value header__value-first" data-value='0'>
+                            <span data-language="ua">UA</span>
+                            <span class="active" data-language="ru">RU</span>
+                            <span data-language="en">EN</span>
+                        </span>
+                        <span class="header__value" data-value='1'>
+                            <span data-language="uah">UAH</span>
+                            <span class="active" data-language="usd">USD</span>
+                            <span data-language="eur">EUR</span>
+                        </span>
+                    </a>
+                    <div class="header__submenu">
+                        <ul class="header__submenu-list" data-value-list='0'>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="ua">Українська</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link active" data-language-word="ru">Русский</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="en">English</a>
+                            </li>
+                        </ul>
+                        <ul class="header__submenu-list" data-value-list='1'>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="uah"><span>UAH</span>Гривна</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link active" data-language-word="usd"><span>USD</span>Доллар</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link" data-language-word="eur"><span>EUR</span>Евро</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__wrapper-submenu">
+                    <!-- Add or remove class active for notification -->
+                    <a href="#" class="header__link header__link-type-2">
+                        <img src="img/icons/user1.webp" alt="">
+                    </a>
+                    <div class="header__submenu header__submenu-kabinet">
+                        <ul class="header__submenu-list" data-value-list='2'>
+                            <li>
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span>Мои бронирования</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span class="active">Мои желания</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span class="active">Личная информация</span>
+                                </a>
+                            </li>
+                            <li class="border-bot">
+                                <a href="#" class="header__submenu-link-2 header__outer-link">
+                                    <!-- Add or remove class active for notification -->
+                                    <span class="active">Уведомления</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2">Перейти в режим владельца</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2">Обратная связь</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__submenu-link-2">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header-sub"></div>
+            <!-- NOTIFICATIONS -->
+            <section class="notifications">
+                <div class="container">
+                    <div class="notifications__body">
+                        <div class="notifications-sort">
+                            <div class="notifications-content">
+                                <h4>Электронные письма</h4>
+                                <p>Отправляем подтверждения по бронированиям</p>
+                            </div>
+                            <input type="checkbox" class="check-click" checked disabled>
+                        </div>
+                        <div class="notifications-sort">
+                            <div class="notifications-content">
+                                <h4>Чат-бот</h4>
+                                <p>Напоминания о бронированиях, уведомления обо всех изменениях аренды, быстрый доступ к поддержке, информация от владельцев и восстановление доступа к аккаунту.</p>
+                            </div>
+                            <input type="checkbox" class="check-click" id="checkTelephone" checked>
+                        </div>
+                        <div class="notifications-sort notifications-sort-none">
+                            <form action="#" class="notifications-telephone">
+                                <h4>Ваш номер <span>+380638888888</span></h4>
+                                <div class="notifications-telephone-wrapper">
+                                    <div class="notifications-telephone-social">
+                                        <label class="personal-radio__item notifications-item">
+                                            <span>Viber</span>
+                                            <input type="radio" name="messe" class="radio">
+                                            <span class="radio-fake"></span>
+                                        </label>
+                
+                                        <label class="personal-radio__item notifications-item">
+                                            <span>Telegram</span>
+                                            <input type="radio" name="messe" class="radio">
+                                            <span class="radio-fake"></span>
+                                        </label>
+                                    </div>
+                                    <button class="btn-type-4 js-telephone-activation">Активировать</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="notifications-sort">
+                            <div class="notifications-content">
+                                <h4>SMS</h4>
+                                <p>Изменения главных статусов по бронированиям</p>
+                            </div>
+                            <input type="checkbox" class="check-click">
+                        </div>
+                        <div class="notifications-sort">
+                            <div class="notifications-content">
+                                <h4>Уведомления в браузере</h4>
+                                <p>Получайте push-оповещения, чтобы не пропустить изменения по аренде на вашем устройстве.</p>
+                            </div>
+                            <input type="checkbox" class="check-click" checked>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /NOTIFICATIONS -->
+        </div>
+
+        
+    </div>
+    <!-- /WRAPPER -->
+
+ <!-- POPUP -->
+
+    <!-- message: Другие фильтры -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                <h2>Другие фильтры</h2>
+            </div>
+            <div class="popup-container">
+                
+                <form action="#" class="filter popup__filter">
+                    <h3>Аренда</h3>
+                    <div class="filter__radio-wrapper">
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Почасовая</span>
+                                <span class="filter__p">Сопроводительный текст</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Посуточная</span>
+                                <span class="filter__p">Сопроводительный текст</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Без выхода из марины</span>
+                                <span class="filter__p">Позавтракать в яхт-клубе, встретить салют, романтическое свидание</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+                    </div>
+                    <div class="filter__price">
+                        <h3>Ценовой диапазон</h3>
+                        <div class="skin-value">
+                            <div class="skin-value__min">от <span>300$</span></div>
+                            <div class="skin-value__max">до <span>2000$</span></div>
+                        </div>
+                        <div class="wrapper-my-skin">
+                            <input type="text" class="js-range-slider options__input" />
+                        </div>
+                    </div>
+                    <div class="filter__sort">
+                        <div>
+                            <h4>Сортировка карточек</h4>
+                            <p>Сначала дешевле</p>
+                        </div>
+                        <input type="checkbox" class="check-click">
+                    </div>
+                    <div class="filter__guest">
+                        <h3>Гостей</h3>
+                        <div class="filter__guest-content">
+                            <div>
+                                <h4>Взрослые</h4>
+                                <p>Возраст: от 13 лет</p>
+                            </div>
+                            <div class="wrapper-input-number">
+                                <input type="number" class="input-number" value="100" min="0" max="100">
+                                <div class="wrapper-arrows">
+                                    <button class="quantity-arrow-plus arrows stop" tabindex="0">
+                                        <span class="arrows__plus"></span>
+                                    </button>
+                                    <button class="quantity-arrow-minus arrows" tabindex="0">
+                                        <span class="arrows__minus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__guest-content">
+                            <div>
+                                <h4>Дети</h4>
+                                <p>Возраст: 2-12 лет</p>
+                            </div>
+                            <div class="wrapper-input-number">
+                                <input type="number" class="input-number" value="88" min="0" max="100">
+                                <div class="wrapper-arrows">
+                                    <button class="quantity-arrow-plus arrows" tabindex="0">
+                                        <span class="arrows__plus"></span>
+                                    </button>
+                                    <button class="quantity-arrow-minus arrows" tabindex="0">
+                                        <span class="arrows__minus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__guest-content">
+                            <div>
+                                <h4>Младенцы</h4>
+                                <p>Возраст: до 2 лет</p>
+                            </div>
+                            <div class="wrapper-input-number">
+                                <input type="number" class="input-number" value="0" min="0" max="100">
+                                <div class="wrapper-arrows">
+                                    <button class="quantity-arrow-plus arrows" tabindex="0">
+                                        <span class="arrows__plus"></span>
+                                    </button>
+                                    <button class="quantity-arrow-minus arrows stop" tabindex="0">
+                                        <span class="arrows__minus"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__comfort">
+                        <h3>Удобства на борту</h3>
+                        <div class="filter__comfort-body">
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Один
+                                </label>
+                            </div>
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Два
+                                </label>
+                            </div>
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Три
+                                </label>
+                            </div>
+                            <div class="filter__comfort-item">
+                                <label class="check-text">
+                                    <input class="check-box" type="checkbox">
+                                    <span class="check-style"></span>
+                                    Четыре
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__length">
+                        <h3>Длина судна</h3>
+                        <div class="filter__length-body">
+                            <div class="skin-value">
+                                <div class="skin-value__min">от <span>2</span> метров</div>
+                                <div class="skin-value__max">до <span>36</span> метров</div>
+                            </div>
+                            <div class="wrapper-my-skin">
+                                <input type="text" class="js-range-slider-2 options__input" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-wrapper-2 popup__footer">
+                        <button class="btn-date clear" type="reset">Очистить</button>
+                        <button class="btn-date show">Показать <span>15</span> вариантов</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Оборудование -->
+    <div class="popup js-popup" data-id-popup="popup-1">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                <h2>Оборудование</h2>
+            </div>
+            <div class="popup-container ads-popup">
+                <h4>Оборудование на борту</h4>
+                <ul class="ads-popup__list">
+                    <li>Душ на палубе</li>
+                    <li>Обеденный стол</li>
+                    <li>Стереосистема</li>
+                    <li>Тиковая палуба</li>
+                    <li>Терасса в носовой части судна</li>
+                    <li>Терраса в кормовой части судна</li>
+                    <li>Кормовая Купальная Платформа</li>
+                    <li>Лестница для купания</li>
+                </ul>
+                <h4>Комфорт</h4>
+                <ul class="ads-popup__list">
+                    <li>Горячая вода</li>
+                    <li>Опреснитель</li>
+                    <li>Кондиционер</li>
+                    <li>Отопительная система</li>
+                    <li>Стиральная машина</li>
+                    <li>Электрический санузел</li>
+                    <li>Телевизор</li>
+                    <li>Навигационное оборудование</li>
+                    <li>Шлюпка</li>
+                    <li>Подвесной двигатель</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Редактирование -->
+    <div class="popup js-popup" data-id-popup="popup-2">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close personal-close">
+                    <span class="popup__close js-popup__close">
+                        <span class="select__icon personal-icon-2">
+                            <svg class="icon-arrow icon-arrow-select">
+                                <use xlink:href="img/svg/sprite.svg#arrow"></use>
+                            </svg>
+                        </span>
+                        <span class="personal-close__h4">Редактирование</span>
+                    </span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup">
+                <div class="personal-valid">Подтвердите номер, чтобы сотрудники bimbarent или владельцы суден смогли связаться с вами для решения вопросов по бронированиям.</div>
+                <form action="#">
+                    <input type="tel" class="personal-input" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" id="js-telephone-input" maxlength="14" value="+3805056986565" placeholder="+3805056986565">
+                    <div class="personal-code">Получить код в чат-боте:</div>
+                    <div class="personal-radio-wrapper">
+                        <label class="personal-radio__item">
+                            <span>Viber</span>
+                            <input type="radio" name="messe" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="personal-radio__item">
+                            <span>Telegram</span>
+                            <input type="radio" name="messe" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                    </div>
+                    <button class="btn-ads btn-type-3">Продолжить</button>
+                    <input type="text" class="personal-code-input" placeholder="5689">
+                    <button class="btn-type-2 w100 js-btn-telephone">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Отменить бронирование? -->
+    <div class="popup js-popup" data-id-popup="popup-3">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header popup__header-close">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup popup-cancel">
+                <h4>Отменить бронирование?</h4>
+                <div class="booking-popup">Отмена бронирования является окончательной. Восстановить обратно невозможно.</div>
+                <form action="#">
+                    <button class="btn-type-2 w100">Отменить бронирование</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- message: Бронирование отменено -->
+    <div class="popup js-popup" data-id-popup="popup-4">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header popup__header-close">
+                <div class="popup-wrap-close dn">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup popup-cancel">
+                <h4>Бронирование отменено</h4>
+                <div class="booking-popup">Возврат средств на Вашу карту будет осуществен в течение 7-60 дней.</div>
+                <button class="btn-type-2 w100 js-popup__close">Хорошо</button>
+            </div>
+        </div>
+    </div>
+
+    <!--message: Нам очень жаль, что вы столкнулись со сложностями! -->
+    <div class="popup js-popup" data-id-popup="popup-5">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp booking-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup">
+                <h4>Нам очень жаль, что вы столкнулись со сложностями!</h4>
+                <div class="booking-popup">Мы всегда готовы вам помочь и сделать ваш отдых комфортнее. Попробуйте связаться с владельцем и перенести аренды еще раз на удобнее вам время.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- message: Укажите причину отмены -->
+    <div class="popup js-popup" data-id-popup="popup-6">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp personal-wrapp booking-popup-title js-popup__wrapp">
+            <div class="popup__header popup__header-close">
+                <div class="popup-wrap-close">
+                    <span class="popup__close js-popup__close"></span>
+                </div>
+                
+            </div>
+            <div class="popup-container personal-popup popup-cancel popup-cancel-1">
+                <h4>Укажите причину отмены</h4>
+                <form action="#">
+                    <div class="filter__radio-wrapper popup-filter">
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Запрашиваемые даты недоступны</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Поломка (ремонт 1-2 дня)</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Повреждение <br> (ремонт займет время)</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+                        <label class="filter__item">
+                            <span class="col">
+                                <span class="filter__h4">Аренда невозможна из-за погодных условий</span>
+                            </span>
+                            <input type="radio" name="arenda" class="radio">
+                            <span class="radio-fake"></span>
+                        </label>
+                    </div>
+                    <button class="btn-type-2 w100">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ <!-- кнопка прокрутки вверх -->
+    <div class="wrapper-scroll lock-padding none">
+        <div class="scroll-up js-scroll-up">
+            <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+                <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+            </svg>
+        </div>
+    </div>
+    
+    <!-- Подключеине скриптов -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+    <script src="libs/moment.min.js"></script>
+    <script src="libs/daterangepicker.js"></script>
+    <script src="libs/moment-with-locales.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="libs/ion/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
